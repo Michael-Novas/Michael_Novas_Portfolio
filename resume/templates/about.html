@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+{% block title %}About Title{% endblock %}
+
+
+{% block content %}
+<h1>THIS IS MY ABOUT PAGE! MY NAME IS {% include 'snippets/my_name.html' %}</h1>
+<br/><br/>
+
+<h1>{% if first_name == "John" %}
+	Hello John!
+{% else %}
+	Hello {{first_name}}!
+{% endif %}</h1>
+
+{% endblock%}
